@@ -72,6 +72,7 @@ describe('<RevisionRow>', () => {
           gridTemplateColumns='none'
           replicates={false}
           testVersion='student-t'
+          expandAll={false}
         />,
       );
       const shortNameNode = await screen.findByText(shortName);
@@ -101,6 +102,7 @@ describe('Expanded row', () => {
         gridTemplateColumns='none'
         replicates={false}
         testVersion='student-t'
+        expandAll={false}
       />,
     );
 
@@ -128,6 +130,7 @@ describe('Expanded row', () => {
         gridTemplateColumns='none'
         replicates={false}
         testVersion='mann-whitney-u'
+        expandAll={false}
       />,
     );
 
@@ -149,6 +152,7 @@ describe('Expanded row', () => {
         gridTemplateColumns='none'
         replicates={false}
         testVersion='student-t'
+        expandAll={false}
       />,
     );
 
@@ -165,6 +169,7 @@ describe('Expanded row', () => {
         gridTemplateColumns='none'
         replicates={false}
         testVersion='student-t'
+        expandAll={false}
       />,
     );
     const expandRow = await screen.findByTestId(/ExpandMoreIcon/);
@@ -185,6 +190,7 @@ describe('Expanded row', () => {
         gridTemplateColumns='none'
         replicates={false}
         testVersion='mann-whitney-u'
+        expandAll={false}
       />,
     );
 
@@ -213,6 +219,7 @@ describe('Expanded row', () => {
         gridTemplateColumns='none'
         replicates={false}
         testVersion='mann-whitney-u'
+        expandAll={false}
       />,
     );
 
@@ -234,6 +241,7 @@ describe('Expanded row', () => {
         gridTemplateColumns='none'
         replicates={false}
         testVersion='mann-whitney-u'
+        expandAll={false}
       />,
     );
 
@@ -252,6 +260,7 @@ describe('Expanded row', () => {
         gridTemplateColumns='none'
         replicates={false}
         testVersion='mann-whitney-u'
+        expandAll={false}
       />,
     );
 
@@ -279,6 +288,7 @@ describe('Expanded row', () => {
         gridTemplateColumns='none'
         replicates={false}
         testVersion='mann-whitney-u'
+        expandAll={false}
       />,
     );
 
@@ -298,6 +308,7 @@ describe('Expanded row', () => {
         gridTemplateColumns='none'
         replicates={false}
         testVersion='student-t'
+        expandAll={false}
       />,
     );
 
@@ -326,6 +337,7 @@ describe('Expanded row', () => {
         gridTemplateColumns='none'
         replicates={false}
         testVersion='student-t'
+        expandAll={false}
       />,
     );
 

@@ -1,6 +1,9 @@
 import { Suspense, useState } from 'react';
 
+import UnfoldLessIcon from '@mui/icons-material/UnfoldLess';
+import UnfoldMoreIcon from '@mui/icons-material/UnfoldMore';
 import Box from '@mui/material/Box';
+import Button from '@mui/material/Button';
 import CircularProgress from '@mui/material/CircularProgress';
 import { useLoaderData, Await, useSearchParams } from 'react-router';
 
@@ -76,6 +79,8 @@ export default function ResultsTable() {
     setSearchParams(searchParams);
   };
 
+  const [expandAll, setExpandAll] = useState(false);
+
   const rowGridTemplateColumns = columnsConfig
     .map((config) => config.gridWidth)
     .join(' ');
@@ -99,6 +104,24 @@ export default function ResultsTable() {
           onFrameworkChange={onFrameworkChange}
           onTestVersionChange={onTestVersionChange}
         />
+        <Box
+          sx={{
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'flex-end',
+            mt: 1,
+          }}
+        >
+          <Button
+            onClick={() => setExpandAll(!expandAll)}
+            variant='outlined'
+            size='small'
+            startIcon={expandAll ? <UnfoldLessIcon /> : <UnfoldMoreIcon />}
+            data-testid='expand-all-button'
+          >
+            {expandAll ? 'Collapse All' : 'Expand All'}
+          </Button>
+        </Box>
         <TableHeader
           columnsConfiguration={columnsConfig}
           filters={tableFilters}
@@ -140,6 +163,7 @@ export default function ResultsTable() {
               sortColumn={sortColumn}
               sortDirection={sortDirection}
               testVersion={testVersionVal}
+              expandAll={expandAll}
             />
           )}
         </Await>

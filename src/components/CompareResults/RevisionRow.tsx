@@ -1,4 +1,4 @@
-import { useId, useState, type ReactNode } from 'react';
+import { useEffect, useId, useState, type ReactNode } from 'react';
 
 import AppleIcon from '@mui/icons-material/Apple';
 import DragHandleIcon from '@mui/icons-material/DragHandle';
@@ -309,7 +309,14 @@ export const renderDifferingTestVersionColumns = (
 function RevisionRow(props: RevisionRowProps) {
   const id = useId();
 
-  const { result, view, gridTemplateColumns, replicates, testVersion } = props;
+  const {
+    result,
+    view,
+    gridTemplateColumns,
+    replicates,
+    testVersion,
+    expandAll,
+  } = props;
   const {
     platform,
     base_measurement_unit: baseUnit,
@@ -338,11 +345,16 @@ function RevisionRow(props: RevisionRowProps) {
     testVersion === MANN_WHITNEY_U
       ? ((result as MannWhitneyResultsItem).new_standard_stats?.mean ?? null)
       : (result as CompareResultsItem).new_avg_value;
-  const [expanded, setExpanded] = useState(false);
+  const [localExpanded, setLocalExpanded] = useState<boolean | null>(null);
+  const expanded = localExpanded ?? expandAll;
 
   const toggleIsExpanded = () => {
-    setExpanded(!expanded);
+    setLocalExpanded(!expanded);
   };
+
+  useEffect(() => {
+    setLocalExpanded(null);
+  }, [expandAll]);
 
   // Note that the return type is different depending on the view we're in
   const subtestsCompareLink =
@@ -496,6 +508,7 @@ interface RevisionRowProps {
   view: typeof compareView | typeof compareOverTimeView;
   replicates: boolean;
   testVersion: TestVersion;
+  expandAll: boolean;
 }
 
 export default RevisionRow;

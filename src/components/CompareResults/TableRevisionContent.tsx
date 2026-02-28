@@ -22,8 +22,14 @@ const styles = {
 };
 
 function TableRevisionContent(props: Props) {
-  const { results, view, rowGridTemplateColumns, replicates, testVersion } =
-    props;
+  const {
+    results,
+    view,
+    rowGridTemplateColumns,
+    replicates,
+    testVersion,
+    expandAll,
+  } = props;
 
   if (!results.length) {
     return null;
@@ -57,6 +63,7 @@ function TableRevisionContent(props: Props) {
               gridTemplateColumns={rowGridTemplateColumns}
               replicates={replicates}
               testVersion={testVersion}
+              expandAll={expandAll}
             />
           ))}
         </div>
@@ -76,6 +83,7 @@ interface Props {
   view: typeof compareView | typeof compareOverTimeView;
   replicates: boolean;
   testVersion: TestVersion;
+  expandAll: boolean;
 }
 
 export default TableRevisionContent;

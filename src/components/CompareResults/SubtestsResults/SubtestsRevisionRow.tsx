@@ -1,4 +1,4 @@
-import { useId, useState } from 'react';
+import { useEffect, useId, useState } from 'react';
 
 import DragHandleIcon from '@mui/icons-material/DragHandle';
 import ExpandLessIcon from '@mui/icons-material/ExpandLess';
@@ -287,7 +287,8 @@ export const renderSubtestColumnsBasedOnTestVersion = (
 
 function SubtestsRevisionRow(props: RevisionRowProps) {
   const id = useId();
-  const { result, gridTemplateColumns, replicates, testVersion } = props;
+  const { result, gridTemplateColumns, replicates, testVersion, expandAll } =
+    props;
   const {
     base_runs: baseRuns,
     new_runs: newRuns,
@@ -301,11 +302,16 @@ function SubtestsRevisionRow(props: RevisionRowProps) {
     : baseRuns.length;
   const newRunsCount = replicates ? newRunsReplicates.length : newRuns.length;
 
-  const [expanded, setExpanded] = useState(false);
+  const [localExpanded, setLocalExpanded] = useState<boolean | null>(null);
+  const expanded = localExpanded ?? expandAll;
 
   const toggleIsExpanded = () => {
-    setExpanded(!expanded);
+    setLocalExpanded(!expanded);
   };
+
+  useEffect(() => {
+    setLocalExpanded(null);
+  }, [expandAll]);
 
   return (
     <>
@@ -385,6 +391,7 @@ interface RevisionRowProps {
   gridTemplateColumns: string;
   replicates: boolean;
   testVersion?: TestVersion;
+  expandAll: boolean;
 }
 
 export default SubtestsRevisionRow;

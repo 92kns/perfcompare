@@ -32,6 +32,7 @@ describe('SubtestsRevisionRow Component', () => {
         gridTemplateColumns={mockGridTemplateColumns}
         replicates={false}
         testVersion='student-t'
+        expandAll={false}
       />,
     );
 
@@ -53,6 +54,7 @@ describe('SubtestsRevisionRow Component', () => {
         gridTemplateColumns={mockGridTemplateColumns}
         replicates={false}
         testVersion='student-t'
+        expandAll={false}
       />,
     );
 
@@ -70,6 +72,7 @@ describe('SubtestsRevisionRow Component', () => {
         gridTemplateColumns={mockGridTemplateColumns}
         replicates={false}
         testVersion='student-t'
+        expandAll={false}
       />,
     );
 
@@ -87,6 +90,7 @@ describe('SubtestsRevisionRow Component', () => {
         gridTemplateColumns={mockGridTemplateColumns}
         replicates={false}
         testVersion='student-t'
+        expandAll={false}
       />,
     );
 
@@ -107,6 +111,7 @@ describe('SubtestsRevisionRow Component', () => {
         gridTemplateColumns={mockGridTemplateColumns}
         replicates={false}
         testVersion='student-t'
+        expandAll={false}
       />,
     );
 
@@ -128,6 +133,7 @@ describe('SubtestsRevisionRow Component', () => {
         gridTemplateColumns={mockGridTemplateColumns}
         replicates={false}
         testVersion='mann-whitney-u'
+        expandAll={false}
       />,
     );
     const expandRowButton = await screen.findByTestId(/ExpandMoreIcon/);
@@ -148,6 +154,7 @@ describe('SubtestsRevisionRow Component', () => {
         result={subtestsResult[0]}
         gridTemplateColumns={mockGridTemplateColumns}
         replicates={false}
+        expandAll={false}
       />,
     );
     const expandRowButton = await screen.findByTestId(/ExpandMoreIcon/);
@@ -164,6 +171,7 @@ describe('SubtestsRevisionRow Component', () => {
         result={subtestsResult[0]}
         gridTemplateColumns={mockGridTemplateColumns}
         replicates={false}
+        expandAll={false}
       />,
     );
 
@@ -184,6 +192,7 @@ describe('SubtestsRevisionRow Component', () => {
         gridTemplateColumns={mockGridTemplateColumns}
         replicates={false}
         testVersion='mann-whitney-u'
+        expandAll={false}
       />,
     );
 
@@ -207,6 +216,7 @@ describe('SubtestsRevisionRow Component', () => {
         gridTemplateColumns={mockGridTemplateColumns}
         replicates={false}
         testVersion='mann-whitney-u'
+        expandAll={false}
       />,
     );
 
@@ -225,6 +235,7 @@ describe('SubtestsRevisionRow Component', () => {
         gridTemplateColumns={mockGridTemplateColumns}
         replicates={false}
         testVersion='mann-whitney-u'
+        expandAll={false}
       />,
     );
 

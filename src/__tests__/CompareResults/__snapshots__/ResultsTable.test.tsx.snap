@@ -1153,6 +1153,30 @@ exports[`Results Table Should match snapshot 1`] = `
                   </div>
                 </div>
                 <div
+                  class="MuiBox-root css-192qrng"
+                >
+                  <button
+                    aria-label="Expand all rows"
+                    class="MuiButtonBase-root MuiIconButton-root MuiIconButton-colorPrimary MuiIconButton-sizeSmall css-1pgb59k-MuiButtonBase-root-MuiIconButton-root"
+                    data-mui-internal-clone-element="true"
+                    data-testid="expand-all-button"
+                    tabindex="0"
+                    type="button"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-120he73-MuiSvgIcon-root"
+                      data-testid="UnfoldMoreIcon"
+                      focusable="false"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M12 5.83 15.17 9l1.41-1.41L12 3 7.41 7.59 8.83 9zm0 12.34L8.83 15l-1.41 1.41L12 21l4.59-4.59L15.17 15z"
+                      />
+                    </svg>
+                  </button>
+                </div>
+                <div
                   class="fom0p54 f1l733lh"
                   data-testid="table-header"
                   role="row"
@@ -1678,7 +1702,7 @@ exports[`Results Table Should match snapshot 1`] = `
                                 data-testid="expand-revision-button"
                               >
                                 <button
-                                  aria-controls="_r_15_"
+                                  aria-controls="_r_17_"
                                   aria-expanded="false"
                                   class="MuiButtonBase-root MuiIconButton-root MuiIconButton-colorPrimary MuiIconButton-sizeSmall css-1pgb59k-MuiButtonBase-root-MuiIconButton-root"
                                   tabindex="0"
@@ -1868,7 +1892,7 @@ exports[`Results Table Should match snapshot 1`] = `
                                 data-testid="expand-revision-button"
                               >
                                 <button
-                                  aria-controls="_r_1c_"
+                                  aria-controls="_r_1e_"
                                   aria-expanded="false"
                                   class="MuiButtonBase-root MuiIconButton-root MuiIconButton-colorPrimary MuiIconButton-sizeSmall css-1pgb59k-MuiButtonBase-root-MuiIconButton-root"
                                   tabindex="0"
@@ -2058,7 +2082,7 @@ exports[`Results Table Should match snapshot 1`] = `
                                 data-testid="expand-revision-button"
                               >
                                 <button
-                                  aria-controls="_r_1j_"
+                                  aria-controls="_r_1l_"
                                   aria-expanded="false"
                                   class="MuiButtonBase-root MuiIconButton-root MuiIconButton-colorPrimary MuiIconButton-sizeSmall css-1pgb59k-MuiButtonBase-root-MuiIconButton-root"
                                   tabindex="0"
@@ -2329,7 +2353,7 @@ exports[`Results Table Should match snapshot 1`] = `
                                 data-testid="expand-revision-button"
                               >
                                 <button
-                                  aria-controls="_r_1r_"
+                                  aria-controls="_r_1t_"
                                   aria-expanded="false"
                                   class="MuiButtonBase-root MuiIconButton-root MuiIconButton-colorPrimary MuiIconButton-sizeSmall css-1pgb59k-MuiButtonBase-root-MuiIconButton-root"
                                   tabindex="0"
@@ -3532,7 +3556,7 @@ exports[`Results Table for MannWhitneyResultsItem for mann-whitney-u testVersion
                             aria-invalid="false"
                             aria-label="Search by title, platform, revision or options"
                             class="MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputSizeSmall MuiInputBase-inputAdornedStart MuiInputBase-inputAdornedEnd css-3v3un6-MuiInputBase-input-MuiOutlinedInput-input"
-                            id="_r_p1_"
+                            id="_r_pl_"
                             placeholder="Filter results"
                             type="search"
                             value=""
@@ -3789,6 +3813,30 @@ exports[`Results Table for MannWhitneyResultsItem for mann-whitney-u testVersion
                       </button>
                     </div>
                   </div>
+                </div>
+                <div
+                  class="MuiBox-root css-192qrng"
+                >
+                  <button
+                    aria-label="Expand all rows"
+                    class="MuiButtonBase-root MuiIconButton-root MuiIconButton-colorPrimary MuiIconButton-sizeSmall css-1pgb59k-MuiButtonBase-root-MuiIconButton-root"
+                    data-mui-internal-clone-element="true"
+                    data-testid="expand-all-button"
+                    tabindex="0"
+                    type="button"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-120he73-MuiSvgIcon-root"
+                      data-testid="UnfoldMoreIcon"
+                      focusable="false"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M12 5.83 15.17 9l1.41-1.41L12 3 7.41 7.59 8.83 9zm0 12.34L8.83 15l-1.41 1.41L12 21l4.59-4.59L15.17 15z"
+                      />
+                    </svg>
+                  </button>
                 </div>
                 <div
                   class="fom0p54 f1l733lh"
@@ -4329,7 +4377,7 @@ exports[`Results Table for MannWhitneyResultsItem for mann-whitney-u testVersion
                                 data-testid="expand-revision-button"
                               >
                                 <button
-                                  aria-controls="_r_pm_"
+                                  aria-controls="_r_qc_"
                                   aria-expanded="false"
                                   class="MuiButtonBase-root MuiIconButton-root MuiIconButton-colorPrimary MuiIconButton-sizeSmall css-1pgb59k-MuiButtonBase-root-MuiIconButton-root"
                                   tabindex="0"
@@ -4532,7 +4580,7 @@ exports[`Results Table for MannWhitneyResultsItem for mann-whitney-u testVersion
                                 data-testid="expand-revision-button"
                               >
                                 <button
-                                  aria-controls="_r_pt_"
+                                  aria-controls="_r_qj_"
                                   aria-expanded="false"
                                   class="MuiButtonBase-root MuiIconButton-root MuiIconButton-colorPrimary MuiIconButton-sizeSmall css-1pgb59k-MuiButtonBase-root-MuiIconButton-root"
                                   tabindex="0"
@@ -4722,7 +4770,7 @@ exports[`Results Table for MannWhitneyResultsItem for mann-whitney-u testVersion
                                 data-testid="expand-revision-button"
                               >
                                 <button
-                                  aria-controls="_r_q4_"
+                                  aria-controls="_r_qq_"
                                   aria-expanded="false"
                                   class="MuiButtonBase-root MuiIconButton-root MuiIconButton-colorPrimary MuiIconButton-sizeSmall css-1pgb59k-MuiButtonBase-root-MuiIconButton-root"
                                   tabindex="0"
@@ -4993,7 +5041,7 @@ exports[`Results Table for MannWhitneyResultsItem for mann-whitney-u testVersion
                                 data-testid="expand-revision-button"
                               >
                                 <button
-                                  aria-controls="_r_qc_"
+                                  aria-controls="_r_r2_"
                                   aria-expanded="false"
                                   class="MuiButtonBase-root MuiIconButton-root MuiIconButton-colorPrimary MuiIconButton-sizeSmall css-1pgb59k-MuiButtonBase-root-MuiIconButton-root"
                                   tabindex="0"
@@ -5650,7 +5698,7 @@ exports[`Results Table for MannWhitneyResultsItem for mann-whitney-u testVersion
           data-testid="expand-revision-button"
         >
           <button
-            aria-controls="_r_ss_"
+            aria-controls="_r_tm_"
             aria-expanded="false"
             class="MuiButtonBase-root MuiIconButton-root MuiIconButton-colorPrimary MuiIconButton-sizeSmall css-1pgb59k-MuiButtonBase-root-MuiIconButton-root"
             tabindex="0"
@@ -5892,7 +5940,7 @@ exports[`Results Table for MannWhitneyResultsItem for mann-whitney-u testVersion
           data-testid="expand-revision-button"
         >
           <button
-            aria-controls="_r_t4_"
+            aria-controls="_r_tu_"
             aria-expanded="false"
             class="MuiButtonBase-root MuiIconButton-root MuiIconButton-colorPrimary MuiIconButton-sizeSmall css-1pgb59k-MuiButtonBase-root-MuiIconButton-root"
             tabindex="0"
@@ -6196,7 +6244,7 @@ exports[`Results Table should render different blocks when rendering several rev
           data-testid="expand-revision-button"
         >
           <button
-            aria-controls="_r_49_"
+            aria-controls="_r_4f_"
             aria-expanded="false"
             class="MuiButtonBase-root MuiIconButton-root MuiIconButton-colorPrimary MuiIconButton-sizeSmall css-1pgb59k-MuiButtonBase-root-MuiIconButton-root"
             tabindex="0"
@@ -6443,7 +6491,7 @@ exports[`Results Table should render different blocks when rendering several rev
           data-testid="expand-revision-button"
         >
           <button
-            aria-controls="_r_4h_"
+            aria-controls="_r_4n_"
             aria-expanded="false"
             class="MuiButtonBase-root MuiIconButton-root MuiIconButton-colorPrimary MuiIconButton-sizeSmall css-1pgb59k-MuiButtonBase-root-MuiIconButton-root"
             tabindex="0"

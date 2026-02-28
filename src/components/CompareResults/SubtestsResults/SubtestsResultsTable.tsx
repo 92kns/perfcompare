@@ -1,6 +1,9 @@
-import { Suspense, useMemo } from 'react';
+import { Suspense, useMemo, useState } from 'react';
 
+import UnfoldLessIcon from '@mui/icons-material/UnfoldLess';
+import UnfoldMoreIcon from '@mui/icons-material/UnfoldMore';
 import Box from '@mui/material/Box';
+import Button from '@mui/material/Button';
 import CircularProgress from '@mui/material/CircularProgress';
 import { Await } from 'react-router';
 
@@ -90,6 +93,8 @@ function SubtestsResultsTable({
   const { sortColumn, sortDirection, onToggleSort } =
     useTableSort(columnsConfiguration);
 
+  const [expandAll, setExpandAll] = useState(false);
+
   const rowGridTemplateColumns = columnsConfiguration
     .map((config) => config.gridWidth)
     .join(' ');
@@ -100,6 +105,24 @@ function SubtestsResultsTable({
       role='table'
       sx={{ marginTop: 3, paddingBottom: 3 }}
     >
+      <Box
+        sx={{
+          display: 'flex',
+          alignItems: 'center',
+          justifyContent: 'flex-end',
+          mt: 1,
+        }}
+      >
+        <Button
+          onClick={() => setExpandAll(!expandAll)}
+          variant='outlined'
+          size='small'
+          startIcon={expandAll ? <UnfoldLessIcon /> : <UnfoldMoreIcon />}
+          data-testid='expand-all-button'
+        >
+          {expandAll ? 'Collapse All' : 'Expand All'}
+        </Button>
+      </Box>
       {/* Using the same TableHeader component as the CompareResults components but with different columnsConfiguration */}
       <TableHeader
         columnsConfiguration={columnsConfiguration}
@@ -163,6 +186,7 @@ function SubtestsResultsTable({
                     rowGridTemplateColumns={rowGridTemplateColumns}
                     replicates={replicates}
                     testVersion={testVersion}
+                    expandAll={expandAll}
                   />
                 ))}
               </>

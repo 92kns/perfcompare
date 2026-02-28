@@ -10,6 +10,7 @@ function SubtestsTableContent(props: SubtestsTableContentProps) {
     rowGridTemplateColumns,
     replicates,
     testVersion,
+    expandAll,
   } = props;
 
   if (!results.length) {
@@ -25,6 +26,7 @@ function SubtestsTableContent(props: SubtestsTableContentProps) {
           gridTemplateColumns={rowGridTemplateColumns}
           replicates={replicates}
           testVersion={testVersion ?? STUDENT_T}
+          expandAll={expandAll}
         />
       ))}
     </>
@@ -37,6 +39,7 @@ interface SubtestsTableContentProps {
   rowGridTemplateColumns: string;
   replicates: boolean;
   testVersion?: TestVersion;
+  expandAll: boolean;
 }
 
 export default SubtestsTableContent;
